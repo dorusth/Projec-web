@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #e6e6e9;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 4em;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,.5);
+    box-shadow: 0 0 3px 1px rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+}
+
+#header_content{
+    width: 62.5em;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search input{
+    width: 0;
+    border: 0;
+}
+
+main{
+    width: 62.5em;
+    margin: 5em auto 0;
+}
+
+/*featured stories*/
+section#featured{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.featured_story{
+    width: 30em;
+    overflow: auto;
+    height: 16.8em;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding-bottom: .5em;
+    background-image: url(../img/landscape-with-hills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story_overlay{ 
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0.6+27,1+100 */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 27%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 27%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 27%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    color: #253a7d;
+    text-decoration: none;
+    padding: 0 .5em;
+    margin-bottom: -5em;
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+article.featured_story:hover .story_overlay{
+    margin-bottom: -1em;
+}
+
+/*leeslijst*/
+section#leeslijst{
+    background-color: #ffca00;
+    padding: .5em;
+    width: 100%;
+    margin: 2em 0;
+}
+
+section#leeslijst h2{
+    margin: .2em;
+}
+
+section#leeslijst_contain{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.story_container{
+    width: 15em;
+    height: 15em;
+    overflow: hidden;
+    background: white;
+}
+
+article.story_container img{
+    height: 10em;
+}
+
+.story_data{
+    background: #fff;
+    height: 5em;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1em;
+    padding: .5em 1em 1em;
+    color: black;
+}
+
+.story_data h3{
+    margin: 0.5em 0 0 0 ;
+}
+
+.story_data p{
+    margin: 0.5em 0 0 0 ;
+}
+
+
+/*Filter*/
+article#filters{
+    background: #253a7d;
+    width: 100%;
+    padding: 1em 1em 1.5em;
+    margin-bottom: 1em;
+}
+
+article#filters h2{
+    margin: 0 0 .5em 0;
+    color: white;
+}
+
+#filter_row{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4em;
+}
+
+.filter{
+    width: 8.5em;
+    height: 2em;
+    padding: .5em;
+    background:#74b6e7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.filter p{
+    font-size: 1.2em;
+}
+
+section#filtered_stories{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+section#filtered_stories .story_container{
+    margin-bottom: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*register page*/
+
+section#register_form{
+    width: 100%;
+    background: white;
+    padding: 2em;
+    
+}
+
+fieldset{
+    border: none;
+}
+
+
+
+
+@media screen and (max-width: 64em) {
+    body {
+        overflow-x: hidden; 
+    }
+    
+    #header_content{
+        width: 50em;
+    }
+    
+    main{
+        width: 50em;
+    }
+    
+    section#featured a:last-child{
+        visibility: hidden;
+    }
+    
+    article.featured_story{
+        width: 200%;
+    }
+    
+    section#leeslijst_contain article.story_container{
+        margin-right: 1em;
+    }
+    
+    #filter_row{
+        margin: .5em;
+    }
+}
+
+
+@media screen and (max-width: 51em) {
+    body {
+       
+    }
+    
+    #header_content{
+        width: 100%;
+    }
+    
+    main{
+        width: 100%;
+        padding: 0 1em;
+    }
+    
+    section#leeslijst_contain article.story_container{
+        margin-right: 1em;
+    }
+    
+    #filter_row{
+        margin: .5em;
+    }
+    
+    .filter{
+        width: 15%;
+        height: auto;
+        justify-content: center;
+        padding: .2em;
+    }
+    
+    .filter p{
+        font-size: 1em;
+        padding-left: .2em;
+    }
+    
+}
+
+@media screen and (max-width: 48.5em){
+    width: 12%;
+}
+
+@media screen and (max-width: 40em){
+    .filter p{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+
+
+
+
+
+

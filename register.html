@@ -2,26 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NS Verhalen | verhaal </title>
+    <title>NS Verhalen | Aanmelden </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/be27f12877.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-           <a href="#"><img src="" alt="login"></a><!--login button-->
-           <a href="#"><img src="" alt="Logo/Home"><h1> NS Reisverhalen </h1></a><!--home button/logo-->
-           <input type="text"><i></i><!--search-->
+        <article id="header_content">
+           <a href="register.html"><img src="img/login.svg" alt="login"></a><!--login button-->
+           <a href="#"><img src="img/nslogo.svg" alt="Logo/Home"></a><!--home button/logo-->
+            <div id="search"><form action="submit"><input type="text" id="searchfield" placeholder="search"><label for="searchfield"><img src="img/zoek.svg" alt="zoek"></label></form></div><!--search-->
+        </article>
     </header>
-    <main id="register">
-        <form action="index.html">
-            Naam
-            <input type="text" name="Naam" placeholder="Naam">
-            Email
-            <input type="email" name="email" placeholder="email">
-            Wachtwoord
-            <input type="password" name="password" placeholder="password">
-            Herhaal wachtwoord
-            <input type="password" name="password_confirm" placeholder="confirm password">
-            <input type="submit" value="verzenden">
-        </form>
+    <main>
+       <section id="register_form">
+            <form action="index.html">
+                <fieldset>
+                   <legend>Naam</legend>
+                        <label for="name">Voornaam</label><input type="text" name="Voornaam" id="firstname" placeholder="Voornaam">
+                        <label for="name">Achternaam</label><input type="text" name="Achtenaam" id="lastname" placeholder="achternaam">
+                </fieldset>
+                <fieldset>
+                    <legend>E-mail</legend>
+                        <label for="email">Email</label><input type="email" name="email" id="email" placeholder="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Adres</legend>
+                        <label for="street">Straat</label><input type="text" name="straat" id="street" placeholder="straat">
+                        <label for="zipcode">Postcode</label><input type="text" name="postcode" id="zipcode" placeholder="straat">
+                </fieldset>
+                <fieldset>    
+                    <legend>Wachtwoord</legend>
+                        <label for="password">Wachtwoord</label>
+                        <input type="password" name="password" id="password" placeholder="password">
+                        <label for="confirm">Herhaal wachtwoord</label>
+                        <input type="password" name="password_confirm" id="confirm" placeholder="confirm password">
+                </fieldset>
+                <input type="submit" value="verzenden">
+            </form>
+        </section>
     </main>
 </body>
 </html>

@@ -3,111 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>NS verhalen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/be27f12877.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-           <a href="#"><img src="" alt="login"></a><!--login button-->
-           <a href="#"><img src="" alt="Logo/Home"><h1> NS Reisverhalen </h1></a><!--home button/logo-->
-           <input type="text"><i></i><!--search-->
+        <article id="header_content">
+           <a href="register.html"><img src="img/login.svg" alt="login"></a><!--login button-->
+           <a href="#"><img src="img/nslogo.svg" alt="Logo/Home"></a><!--home button/logo-->
+            <div id="search"><form action="submit"><input type="text" id="searchfield" placeholder="search"><label for="searchfield"><img src="img/zoek.svg" alt="zoek"></label></form></div><!--search-->
+        </article>
     </header>
     <main> 
         <section id="featured">
-            <a href="#"><article id="featured_story1">
+            <a href="#"><article class="featured_story">
                 <div class="story_overlay">
                     <h3>story title</h3>
                     <h4>12 april 2011</h4>
                     <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken...
                 </div>
-                </article></a>
+            </article></a>
             
-            <a href="#"><article id="featured_story2">
+            <a href="#"><article class="featured_story">
                 <div class="story_overlay">
                     <h3>story title</h3>
                     <h4>12 april 2011</h4>
                     <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken...
                 </div>
-                </article></a>
+            </article></a>
         </section>
         <section id="leeslijst">
+            <h2>Leeslijst  ></h2>
+            <section id="leeslijst_contain">
             <a href="#"><article class="story_container">
-                <img src="" alt="">
+                <img src="img/antwerpen-winter.jpg" alt="antwerpen">
                 <div class="story_data">
-                    <h5>Story title</h5>
-                    <p><i></i>Read time</p>
+                    <h3>Story title</h3>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
                     <p>Story date</p>
                     <p><i></i>rating</p>
                 </div>
             </article></a>
             
             <a href="#"><article class="story_container">
-                <img src="" alt="">
+                <img src="img/magisch-maastricht.jpg" alt="maastricht">
                 <div class="story_data">
-                    <h5>Story title</h5>
-                    <p><i></i>Read time</p>
+                    <h3>Story title</h3>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
                     <p>Story date</p>
                     <p><i></i>rating</p>
                 </div>
             </article></a>
             
             <a href="#"><article class="story_container">
-                <img src="" alt="">
+                <img src="img/landscape-with-hills.jpg" alt="landschap">
                 <div class="story_data">
-                    <h5>Story title</h5>
-                    <p><i></i>Read time</p>
+                    <h3>Story title</h3>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
                     <p>Story date</p>
                     <p><i></i>rating</p>
                 </div>
             </article></a>
             
             <a href="#"><article class="story_container">
-                <img src="" alt="">
+                <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="amsterdam">
                 <div class="story_data">
-                    <h5>Story title</h5>
-                    <p><i></i>Read time</p>
+                    <h3>Story title</h3>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
                     <p>Story date</p>
                     <p><i></i>rating</p>
                 </div>
             </article></a>
-            
+            </section>
         </section>
         <section id="article_overview">
             <article id="filters">
-                <div id="a_Z" class="filter">
-                    <div class="filter_slideout">
-                        
-                    </div> 
-                </div>
-                
-                <div id="1_9" class="filter">
-                    <div class="filter_slideout">
-                        
-                    </div> 
-                </div>
-                
-                <div id="Date" class="filter">
-                    <div class="filter_slideout">
-                        
-                    </div> 
-                </div>
-                
-                <div id="read_time" class="filter">
-                    <div class="filter_slideout">
-                        
-                    </div> 
-                </div>
-                
-                <div id="style" class="filter">
-                    <div class="filter_slideout">
-                        
-                    </div> 
-                </div>
+              <h2>Filters</h2>
+               <article id="filter_row">
+                    <div id="a_Z" class="filter">
+                        <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i><p>Alfabetisch</p>
+                    </div>
+
+                    <div id="1_9" class="filter"> 
+                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i><p>Numeriek</p>
+                    </div>
+
+                    <div id="Date" class="filter">
+                        <i class="fa fa-calendar" aria-hidden="true"></i><p>Datum</p>
+                    </div>
+
+                    <div id="read_time" class="filter">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i><p>Leesduur</p>
+                    </div>
+
+                    <div id="style" class="filter">
+                    <i class="fa fa-pencil" aria-hidden="true"></i><p>Schrijfstijl</p>
+                    </div>
+                </article>
             </article>
             <section id="filtered_stories">
                 
-                   <a href="#"><article class="story_container">
-                    <img src="" alt="">
+                <a href="#"><article class="story_container">
+                    <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="">
                     <div class="story_data">
-                        <h5>Story title</h5>
+                        <h3>Story title</h3>
                         <p><i></i>Read time</p>
                         <p>Story date</p>
                         <p><i></i>rating</p>
@@ -115,9 +115,9 @@
                 </article></a>
                 
                 <a href="#"><article class="story_container">
-                    <img src="" alt="">
+                    <img src="img/ns-wandeling-beerschoten-hero.jpg" alt="">
                     <div class="story_data">
-                        <h5>Story title</h5>
+                        <h3>Story title</h3>
                         <p><i></i>Read time</p>
                         <p>Story date</p>
                         <p><i></i>rating</p>
@@ -125,10 +125,100 @@
                 </article></a>
                 
                 <a href="#"><article class="story_container">
-                    <img src="" alt="">
+                    <img src="img/ns-wandeling-hollandse-kade-hero.jpg" alt="">
                     <div class="story_data">
-                        <h5>Story title</h5>
+                        <h3>Story title</h3>
                         <p><i></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+                
+                <a href="#"><article class="story_container">
+                    <img src="img/ns-wandeling-rotterdam-maasstad-hero.jpg" alt="">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+                
+                <a href="#"><article class="story_container">
+                    <img src="img/restaurant.jpeg" alt="">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+                
+                <a href="#"><article class="story_container">
+                    <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+                
+                <a href="#"><article class="story_container">
+                    <img src="img/ns-wandeling-beerschoten-hero.jpg" alt="">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+                
+                <a href="#"><article class="story_container">
+                    <img src="img/ns-wandeling-hollandse-kade-hero.jpg" alt="">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+                
+                <a href="#"><article class="story_container">
+                    <img src="img/antwerpen-winter.jpg" alt="antwerpen">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+
+                <a href="#"><article class="story_container">
+                    <img src="img/magisch-maastricht.jpg" alt="maastricht">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+
+                <a href="#"><article class="story_container">
+                    <img src="img/landscape-with-hills.jpg" alt="landschap">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
+                        <p>Story date</p>
+                        <p><i></i>rating</p>
+                    </div>
+                </article></a>
+
+                <a href="#"><article class="story_container">
+                    <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="amsterdam">
+                    <div class="story_data">
+                        <h3>Story title</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
                         <p>Story date</p>
                         <p><i></i>rating</p>
                     </div>
