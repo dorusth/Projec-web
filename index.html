@@ -9,223 +9,336 @@
 </head>
 <body>
     <header>
-        <article id="header_content">
-           <a href="register.html"><img src="img/login.svg" alt="login"></a><!--login button-->
-           <a href="#"><img src="img/nslogo.svg" alt="Logo/Home"></a><!--home button/logo-->
-            <div id="search"><form action="submit"><input type="text" id="searchfield" placeholder="search"><label for="searchfield"><img src="img/zoek.svg" alt="zoek"></label></form></div><!--search-->
+        <article>
+            <a href="register.html"><img src="img/login.svg" alt="login"></a><!--login button-->
+            <a id="home" href="#"><img src="img/nslogo.svg" alt="Logo/Home"></a><!--home button/logo-->
+            <form action="submit"><input type="text" id="searchfield"></form><!--search-->
         </article>
     </header>
-    <main> 
-        <section id="featured">
-            <a href="#"><article class="featured_story">
-                <div class="story_overlay">
-                    <h3>story title</h3>
+    <main>
+        <a href="#">
+            <article id="featured">
+               <form><input type="checkbox" id="b7"><label for="b7"></label></form>
+                <div id="overlay">
+                    <h3>Gefrustreerd</h3>
                     <h4>12 april 2011</h4>
                     <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken...
                 </div>
-            </article></a>
-            
-            <a href="#"><article class="featured_story">
-                <div class="story_overlay">
-                    <h3>story title</h3>
-                    <h4>12 april 2011</h4>
-                    <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken...
-                </div>
-            </article></a>
-        </section>
+            </article>
+        </a>
         <section id="leeslijst">
             <h2>Leeslijst  ></h2>
-            <section id="leeslijst_contain">
-            <a href="#"><article class="story_container">
-                <img src="img/antwerpen-winter.jpg" alt="antwerpen">
-                <div class="story_data">
-                    <h3>Story title</h3>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                    <p>Story date</p>
-                    <p><i></i>rating</p>
-                </div>
-            </article></a>
-            
-            <a href="#"><article class="story_container">
-                <img src="img/magisch-maastricht.jpg" alt="maastricht">
-                <div class="story_data">
-                    <h3>Story title</h3>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                    <p>Story date</p>
-                    <p><i></i>rating</p>
-                </div>
-            </article></a>
-            
-            <a href="#"><article class="story_container">
-                <img src="img/landscape-with-hills.jpg" alt="landschap">
-                <div class="story_data">
-                    <h3>Story title</h3>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                    <p>Story date</p>
-                    <p><i></i>rating</p>
-                </div>
-            </article></a>
-            
-            <a href="#"><article class="story_container">
-                <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="amsterdam">
-                <div class="story_data">
-                    <h3>Story title</h3>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                    <p>Story date</p>
-                    <p><i></i>rating</p>
-                </div>
-            </article></a>
+            <section>
+                <a href="blind.html">
+                    <article>
+                        <img src="img/ns-wandeling-rotterdam-maasstad-hero.jpg" alt="rotterdam">
+                        <form><input type="checkbox" checked="checked" id="b1"><label for="b1"></label></form>
+                        <aside>
+                            <h3>Blind</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  |  11 juli 2011</p>
+                            <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. </p>
+                        </aside>
+                    </article>
+                </a>
+                
+                <a href="verhaal.html">
+                    <article>
+                        <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="rotterdam">
+                        <form><input type="checkbox" checked="checked" id="b2"><label for="b2"></label></form>
+                        <aside>
+                            <h3>Notitie</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  |  11 juli 2011</p>
+                            <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek.</p>
+                        </aside>
+                    </article>
+                </a>
+                
+                <a href="verhaal1.html">
+                    <article>
+                        <img src="img/ns-wandeling-beerschoten-hero.jpg" alt="rotterdam">
+                        <form><input type="checkbox" checked="checked" id="b3"><label for="b3"></label></form>
+                        <aside>
+                            <h3>Scenario</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  |  11 juli 2011</p>
+                            <p>1. EXT. BUSHALTE CENTRAAL STATION – OMSTREEKS 12.00 UUR  Het miezert op een onbestemde dag.</p>
+                        </aside>
+                    </article>
+                </a>
+                
+                <a href="#">
+                    <article>
+                        <img src="img/ns-wandeling-hollandse-kade-hero.jpg" alt="rotterdam">
+                        <form><input type="checkbox" checked="checked" id="b4"><label for="b4"></label></form>
+                        <aside>
+                            <h3>Vrijdag de 13e</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  |  11 juli 2011</p>
+                            <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij.</p>
+                        </aside>
+                    </article>
+                </a>
+                
+                <a href="#">
+                    <article>
+                        <img src="img/ns-wandeling-rotterdam-maasstad-hero.jpg" alt="rotterdam">
+                        <form><input type="checkbox" checked="checked" id="b5"><label for="b5"></label></form>
+                        <aside>
+                            <h3>Oud testament</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  |  11 juli 2011</p>
+                            <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij.</p>
+                        </aside>
+                    </article>
+                </a>
+                
+                <a href="#">
+                    <article>
+                        <img src="img/restaurant.jpeg" alt="rotterdam">
+                        <form><input type="checkbox" checked="checked" id="b6"><label for="b6"></label></form>
+                        <aside>
+                            <h3>Lange Frans</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  |  11 juli 2011</p>
+                            <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij.</p>
+                        </aside>
+                    </article>
+                </a>
+                
+                
+                
             </section>
         </section>
-        <section id="article_overview">
-            <article id="filters">
-              <h2>Filters</h2>
-               <article id="filter_row">
-                    <div id="a_Z" class="filter">
+        <section id="article_filters">
+            <h2>Filters</h2>
+            <article>
+                <ul>
+                    <li class="alfabet">
                         <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i><p>Alfabetisch</p>
-                    </div>
-
-                    <div id="1_9" class="filter"> 
+                    </li>
+                    
+                    <li class="nummer">
                         <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i><p>Numeriek</p>
-                    </div>
-
-                    <div id="Date" class="filter">
+                    </li>
+                    
+                    <li class="datum">
                         <i class="fa fa-calendar" aria-hidden="true"></i><p>Datum</p>
-                    </div>
-
-                    <div id="read_time" class="filter">
+                    </li>
+                    
+                    <li class="leesduur">
                         <i class="fa fa-clock-o" aria-hidden="true"></i><p>Leesduur</p>
-                    </div>
-
-                    <div id="style" class="filter">
-                    <i class="fa fa-pencil" aria-hidden="true"></i><p>Schrijfstijl</p>
-                    </div>
-                </article>
+                    </li>
+                    
+                    <li class="stijl">
+                        <i class="fa fa-pencil" aria-hidden="true"></i><p>Schrijfstijl</p>
+                    </li>
+                </ul>
             </article>
-            <section id="filtered_stories">
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-beerschoten-hero.jpg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-hollandse-kade-hero.jpg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-rotterdam-maasstad-hero.jpg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/restaurant.jpeg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-beerschoten-hero.jpg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-hollandse-kade-hero.jpg" alt="">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-                <a href="#"><article class="story_container">
-                    <img src="img/antwerpen-winter.jpg" alt="antwerpen">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-
-                <a href="#"><article class="story_container">
-                    <img src="img/magisch-maastricht.jpg" alt="maastricht">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-
-                <a href="#"><article class="story_container">
-                    <img src="img/landscape-with-hills.jpg" alt="landschap">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-
-                <a href="#"><article class="story_container">
-                    <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="amsterdam">
-                    <div class="story_data">
-                        <h3>Story title</h3>
-                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>Read time</p>
-                        <p>Story date</p>
-                        <p><i></i>rating</p>
-                    </div>
-                </article></a>
-                
-            </section>
+        </section>
+        <section class="alfabet_filter">
+            <form>
+               <h2>Alfabetisch</h2>
+                <fieldset>
+                    <input type="radio" name="alfabet" value="a-z" checked> Alfabetisch A-Z
+                    <input type="radio" name="alfabet" value="z-a"> Alfabetisch Z-A
+                </fieldset>
+            </form>
+        </section>
+            
+        <section class="nummer_filter">
+            <form>
+               <h2>Numeriek</h2>
+                <fieldset>
+                    <input type="radio" name="numeriek" value="0-9" checked> Oplopend 0 - 9
+                    <input type="radio" name="numeriek" value="9-0"> Aflopend 0 - 9
+                </fieldset>
+            </form>
+        </section>
+            
+        <section class="datum_filter">
+           <form>
+               <h2>Datum</h2>
+                <fieldset>
+                    <input type="radio" name="numeriek" value="0-9" checked> Oplopend 0 - 9
+                    <input type="radio" name="numeriek" value="9-0"> Aflopend 0 - 9
+                </fieldset>
+                <fieldset>
+                    <input type="date" name="van">
+                    <input type="date" name="tot">
+                </fieldset>
+            </form>
+        </section>
+            
+        <section class="leesduur_filter">
+           <form>
+               <h2>Leesduur</h2>
+                <fieldset>
+                    <input type="radio" name="numeriek" value="0-9" checked> Oplopend 0 - 9
+                    <input type="radio" name="numeriek" value="9-0"> Aflopend 0 - 9
+                </fieldset>
+                <fieldset>
+                    <label for="fader">Leesduur</label>
+                    <input type="range" min="0" max="15" value="3" id="fader" step="1" oninput="outputUpdate(value)">
+                    <output for="fader" id="volume">3 min</output>
+                </fieldset>
+            </form>
+        </section>
+        <section class="stijl_filter">
+            <form>
+               <h2>Stijl</h2>
+                <fieldset>
+                    <input type="checkbox" id="schrijver"> <label for="schrijver">Schrijver</label><br>
+                    <input type="checkbox" id="persoon"> <label for="persoon">Persoon</label><br>
+                    <input type="checkbox" id="gedicht"> <label for="gedicht">Gedicht</label><br>
+                    <input type="checkbox" id="buitenlands"> <label for="buitenlands">Buitenlands</label><br>
+                    <input type="checkbox" id="fictie"> <label for="fictie">Fictie</label><br>
+                    <input type="checkbox" id="gedicht"> <label for="gedicht">Gedicht</label><br>
+                </fieldset>
+            </form>
+        </section>
+        <section id="stories">
+            <a href="#">
+                <article>
+                    <img src="img/ns-wandeling-beerschoten-hero.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b19"><label for="b19"></label></form>
+                    <aside>
+                        <h3>Verrassing</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/antwerpen-winter.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b18"><label for="b18"></label></form>
+                    <aside>
+                        <h3>Beroemd</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij.</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/magisch-maastricht.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b17"><label for="b17"></label></form>
+                    <aside>
+                        <h3>Freudiaans</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen.</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/landscape-with-hills.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b8"><label for="b8"></label></form>
+                    <aside>
+                        <h3>Steenkolenfrans</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. </p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/restaurant.jpeg" alt="beerschoten">
+                    <form><input type="checkbox" id="b9"><label for="b9"></label></form>
+                    <aside>
+                        <h3>Martin Bril</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Centraal Station. Iedereen gaat er naartoe, niemand moet er zijn. Behalve om verder te reizen. Ik stap uit de bus, lijn 21. Van Geuzenveld naar Centraal Station.</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/ns-wandeling-rotterdam-maasstad-hero.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b10"><label for="b10"></label></form>
+                    <aside>
+                        <h3>Het gebrek</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. </p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/ns-wandeling-hollandse-kade-hero.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b11"><label for="b11"></label></form>
+                    <aside>
+                        <h3>Nico Dijkshoorn die Mart Smeets imiteert</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Noot vooraf: de heer Nico Dijkshoorn hecht eraan te melden dat hij onderstaande niet heeft geschreven. Ik stap uit een, ja wat is het eigenlijk?,</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/ns-wandeling-beerschoten-hero.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b12"><label for="b12"></label></form>
+                    <aside>
+                        <h3>Vergezocht</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Het was in de omstreken van een gure februaridag rond het middaguur. Mijn zoon lag in zijn kinderwagen te slapen als een oude jamaicaan die teveel Rum achter de ontbrekende kiezen heeft.</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/ns-wandeling-amsterdam-hero.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b13"><label for="b13"></label></form>
+                    <aside>
+                        <h3>Zoon</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? </p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/magisch-maastricht.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b14"><label for="b14"></label></form>
+                    <aside>
+                        <h3>Telegrafisch</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>BUS STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN EN WIND MENSEN IN ZICHZELF GEKEERD STOP MODDERIGE TERINGZOOI HIER STOP DRILBOREN EN HEIPALEN TEISTEREN</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/landscape-with-hills.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b15"><label for="b15"></label></form>
+                    <aside>
+                        <h3>Zombie</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees.</p>
+                    </aside>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article>
+                    <img src="img/antwerpen-winter.jpg" alt="beerschoten">
+                    <form><input type="checkbox" id="b16"><label for="b16"></label></form>
+                    <aside>
+                        <h3>Klumperbeven</h3>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i> 3min  | 11 juli 2011</p>
+                        <p>Ik bus de stap uit en been met gepaste zwind over het stationsplein. In mijn zoon ligt de kinderwagen te slapen. Het pijpt regenstelen en er guurt een winderige waai.</p>
+                    </aside>
+                </article>
+            </a>
+               
         </section>
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>

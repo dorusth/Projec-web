@@ -1,0 +1,39 @@
+p{
+    font-family: blind;
+    color: #253a7d;
+}
+
+p:hover{
+    font-family: ns-sans;
+}
+
+section#verhaal{
+    width: 100%;
+    max-width: 80em;
+    margin: auto;
+}
+
+section#verhaal section{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid #253a7d;
+}
+
+section#verhaal section h1{
+    font-size: 4em;
+    margin: 0;
+    color: #253a7d;
+}
+
+section#verhaal section h2{
+    font-size: 2em;
+    margin: 0 0 .8em;
+    color: #253a7d;
+}
+
+section#verhaal article{
+    width: 100%;
+    max-width: 50em;
+    margin: auto;
+}
